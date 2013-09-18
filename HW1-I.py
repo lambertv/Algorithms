@@ -36,7 +36,7 @@ increases by a factor of 10. The algorithm is as follows:
     Endwhile
 
 On my machine, with n at 10,000 and running the algorithm 1000 times,
-the average time is 13 seconds.
+the average time is 11 seconds (without the checks).
 """
 import random
 import time
