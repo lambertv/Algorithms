@@ -16,9 +16,9 @@ def sortlist(mylist):
         if mylist[i] is 1:
             mylist[i], mylist[j] = mylist[j], mylist[i]
             j += 1
+            while mylist[j] is 1 and j < len(mylist):
+                j += 1
         i -= 1
-        while mylist[j] is 1 and j < len(mylist):
-            j += 1
     j = len(mylist)-1
     while mylist[j] is 3 and j >= 0:
         j -= 1
@@ -27,9 +27,9 @@ def sortlist(mylist):
         if mylist[i] is 3:
             mylist[i], mylist[j] = mylist[j], mylist[i]
             j -= 1
+            while mylist[j] is 3 and j >= 0:
+                j -= 1
         i+=1
-        while mylist[j] is 3 and j >= 0:
-            j -= 1
     return mylist
 
 def checklist(mylist):
